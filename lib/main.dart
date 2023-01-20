@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:project1/class1/carousal_practice.dart';
+import 'package:project1/class_lessons/carousal_practice.dart';
 import 'package:project1/screens/home.dart';
 
 void main() {

@@ -12,10 +12,50 @@ class CarousalPractice extends StatefulWidget {
 class _CarousalPracticeState extends State<CarousalPractice> {
   int pageIndex = 0;
   List<Widget> _demo = [
-    Container(height: 300, color: Colors.amber),
-    Container(height: 300, color: Colors.black),
-    Container(height: 300, color: Colors.blue),
-    Container(height: 300, color: Colors.green),
+    Container(
+      height: 300,
+      width: 300,
+      color: Colors.amber,
+      child: Center(
+          child: Text(
+        'Slide-1',
+        style: TextStyle(
+            fontSize: 31, fontWeight: FontWeight.bold, color: Colors.white),
+      )),
+    ),
+    Container(
+      height: 300,
+      width: 300,
+      color: Colors.black,
+      child: Center(
+          child: Text(
+        'Slide-2',
+        style: TextStyle(
+            fontSize: 31, fontWeight: FontWeight.bold, color: Colors.white),
+      )),
+    ),
+    Container(
+      height: 300,
+      width: 300,
+      color: Colors.blue,
+      child: Center(
+          child: Text(
+        'Slide-3',
+        style: TextStyle(
+            fontSize: 31, fontWeight: FontWeight.bold, color: Colors.white),
+      )),
+    ),
+    Container(
+      height: 300,
+      width: 300,
+      color: Colors.green,
+      child: Center(
+          child: Text(
+        'Slide-4',
+        style: TextStyle(
+            fontSize: 31, fontWeight: FontWeight.bold, color: Colors.white),
+      )),
+    ),
   ];
   @override
   Widget build(BuildContext context) {
@@ -41,13 +81,13 @@ class _CarousalPracticeState extends State<CarousalPractice> {
               },
             ),
           ),
-          CarouselIndicator(
-            color: Colors.green.withOpacity(.8),
-            activeColor: Colors.blue.withOpacity(0.9),
-            count: _demo.length,
-            index: pageIndex,
-            animationDuration: 50,
-          ),
+          // CarouselIndicator(
+          //   color: Colors.green.withOpacity(.8),
+          //   activeColor: Colors.blue.withOpacity(0.9),
+          //   count: _demo.length,
+          //   index: pageIndex,
+          //   animationDuration: 50,
+          // ),
           SizedBox(
             height: 12,
           ),
